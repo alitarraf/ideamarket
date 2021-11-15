@@ -57,7 +57,11 @@ const SearchPage = () => {
       </div>
       <div className="my-8 mx-20">
         {ideaData.map((idea) => (
-          <Link to={`/app/idea/${idea.id}`} key={idea.id}>
+          <Link
+            to={`/app/idea/${idea.id}`}
+            key={idea.id}
+            className="hover:bg-blue-100"
+          >
             <IdeaCard key={idea.id} idea={idea} />
           </Link>
         ))}

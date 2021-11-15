@@ -26,7 +26,7 @@ function App() {
           <Route exact path={"/app"} element={<SearchPage />} />
           <Route exact path={"/app/create"} element={<CreateIdeaPage />} />
           <Route exact path={"/app/idea/:id"} element={<IdeaPage />} />
-          <Route exact path={"/app/profile"} element={<ProfilePage />} />
+          <Route exact path={"/app/profile/:id"} element={<ProfilePage />} />
         </Route>
       </Routes>
     </div>

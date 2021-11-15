@@ -1,19 +1,16 @@
-const Textarea = () => {
+const Textarea = ({ id, title, placeholder, name, rows }) => {
   return (
     <div>
-      <label
-        htmlFor="comment"
-        className="block text-sm font-medium text-gray-700"
-      >
-        Add your comment
+      <label htmlFor={id} className="block text-sm font-medium text-gray-700">
+        {title}
       </label>
       <div className="mt-1">
         <textarea
-          rows={4}
-          name="comment"
-          id="comment"
-          className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-          defaultValue={""}
+          name={name}
+          id={id}
+          rows={rows}
+          className="shadow-sm p-2 block w-full sm:text-sm border-2 border-gray-300 rounded-md resize-none"
+          placeholder={placeholder}
         />
       </div>
     </div>
