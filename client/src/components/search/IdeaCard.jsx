@@ -1,6 +1,7 @@
 const IdeaCard = ({ idea }) => {
+  // console.log(idea);
   return (
-    <div className="my-4">
+    <div className="p-4 hover:bg-blue-100 rounded border-t border-b">
       <div className="sm:flex">
         <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
           <svg
@@ -21,6 +22,28 @@ const IdeaCard = ({ idea }) => {
         <div>
           <h4 className="text-lg font-bold">{idea.title}</h4>
           <p className="mt-1">{idea.description}</p>
+        </div>
+      </div>
+      <div className="flex mx-8">
+        <div className="flex">
+          {idea.type.map((type, id) => (
+            <div
+              key={id}
+              className="mx-4 bg-green-200 border border-green-300  px-3 rounded-xl text-sm"
+            >
+              {type}
+            </div>
+          ))}
+        </div>
+        <div className="flex">
+          {idea.industry.map((industry, id) => (
+            <div
+              key={id}
+              className="mx-4 bg-blue-200 border border-blue-300  px-3 rounded-xl text-sm"
+            >
+              {industry}
+            </div>
+          ))}
         </div>
       </div>
     </div>
