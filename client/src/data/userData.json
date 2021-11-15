@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Some Guy",
+    "interest": "Investor",
+    "created": "2018-01-01"
+  },
+  {
+    "id": 3,
+    "name": "Some Girl",
+    "interest": "Advisor",
+    "created": "2018-01-01"
+  },
+  {
+    "id": 3,
+    "name": "Another Guy",
+    "interest": "Maker",
+    "created": "2018-01-01"
+  }
+]
