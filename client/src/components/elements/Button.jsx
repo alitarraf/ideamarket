@@ -53,7 +53,7 @@ const Button = ({
         "text-white bg-warning-400 hover:bg-warning-500 border border-transparent shadow-sm";
       break;
     case "none":
-      color = "";
+      color = "hover:bg-gray-200";
       break;
     default:
       color = "text-white bg-indigo-600 hover:bg-indigo-700";
