@@ -30,7 +30,7 @@ const CreateIdeaPage = () => {
     navigate("/app");
   };
   return (
-    <div>
+    <div className="bg-gray-50 border rounded-lg shadow-xl max-w-xl mx-2 sm:mx-auto my-4 md:my-8 lg:my-14 sm:p-2">
       {step === 1 && <CreateFrame1 create1={create1Callback} />}
       {step === 2 && <CreateFrame2 create2={create2Callback} />}
       {step === 3 && <CreateFrame3 create3={create3Callback} />}
