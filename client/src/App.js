@@ -47,9 +47,13 @@ const PublicLayout = () => {
 
 const AppLayout = () => {
   return (
-    <div>
-      <AppHeader />
-      <Outlet />
+    <div className="bg-gray-200">
+      <div className="sm:h-1/12">
+        <AppHeader />
+      </div>
+      <div className="mt-4 sm:mt-0 sm:h-11/12 sm:overflow-y-auto">
+        <Outlet />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Online Dreams Interpretation",
     "description": "Share anonymously your dream online, and get an interpretation from experts depending on your cultural background and references",
     "industry": ["healthcare"],
@@ -12,10 +12,10 @@
     "creator": [],
     "backer": [],
     "created": "2018-01-01",
-    "createdBy": 2
+    "createdBy": "2"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Police gun unlock with AI",
     "description": "Police brutality is caused partially by the aggressiveness of officers towards a perceived threat. What if #AI using camera footage can help assess the threat? Only if the AI authorise it will the gun unlock.",
     "industry": ["police"],
@@ -27,10 +27,10 @@
     "creator": [],
     "backer": [],
     "created": "2018-01-01",
-    "createdBy": 2
+    "createdBy": "2"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Grocery list optimizer",
     "description": "I see a lot of cases where people buy this item from this store and that item from that store because it is cheaper there. Can we tell people where and when to buy things to achieve maximum savings? Both in the offline and online world.",
     "industry": ["food"],
@@ -42,10 +42,10 @@
     "creator": [],
     "backer": [],
     "created": "2018-01-01",
-    "createdBy": 1
+    "createdBy": "1"
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Self AI therapy",
     "description": "Speak to your #AI #therapist. Train an #AI on conversations between #psychologist and patients. The #AI would be able to guide your self introspections.",
     "industry": ["healthcare"],
@@ -57,6 +57,6 @@
     "creator": [],
     "backer": [],
     "created": "2018-01-01",
-    "createdBy": 1
+    "createdBy": "1"
   }
 ]
