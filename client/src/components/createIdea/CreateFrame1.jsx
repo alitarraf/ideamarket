@@ -2,11 +2,21 @@ import { useState } from "react";
 import { Input, Textarea, Button } from "@/components/elements";
 
 const CreateFrame1 = ({ create1 }) => {
-  const [title, setTitle] = useState("title");
-  const [description, setDescription] = useState("desc");
-  const clickStart = () => {
-    create1({ title, description });
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+
+  const titleChange = (e) => {
+    setTitle(e.target.value);
   };
+  const descriptionChange = (e) => {
+    setDescription(e.target.value);
+  };
+
+  const onSubmit = (event) => {
+    event.preventDefault();
+    create1(title, description);
+  };
+
   return (
     <div>
       <div className="">
@@ -20,17 +30,31 @@ const CreateFrame1 = ({ create1 }) => {
         </div>
       </div>
       <div className="max-w-md mx-auto py-4 px-4 sm:max-w-2xl sm:px-6 lg:px-8 ">
-        <div className="">
-          <Input title="Title" />
-        </div>
-        <div className="my-8">
-          <Textarea title="Description" rows="6" />
-        </div>
-        <div>
-          <Button width="full" size="xl" onClick={clickStart}>
-            Start
-          </Button>
-        </div>
+        <form className="" onSubmit={onSubmit}>
+          <div className="">
+            <Input
+              value={title}
+              onChange={titleChange}
+              title="Title"
+              type="text"
+              required
+            />
+          </div>
+          <div className="my-8">
+            <Textarea
+              value={description}
+              onChange={descriptionChange}
+              title="Description"
+              rows="6"
+              required
+            />
+          </div>
+          <div>
+            <Button width="full" size="xl" type="submit">
+              Start
+            </Button>
+          </div>
+        </form>
       </div>
     </div>
   );

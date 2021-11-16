@@ -49,19 +49,19 @@ const IdeaDescriptionCard = ({ idea }) => {
           </div>
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">Why</dt>
-            <dd className="mt-1 text-sm text-gray-900">{idea.why}</dd>
+            <dd className="mt-1 text-sm text-gray-900">{idea.details.why}</dd>
           </div>
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">Who</dt>
-            <dd className="mt-1 text-sm text-gray-900">{idea.who}</dd>
+            <dd className="mt-1 text-sm text-gray-900">{idea.details.who}</dd>
           </div>
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">What</dt>
-            <dd className="mt-1 text-sm text-gray-900">{idea.what}</dd>
+            <dd className="mt-1 text-sm text-gray-900">{idea.details.what}</dd>
           </div>
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">How</dt>
-            <dd className="mt-1 text-sm text-gray-900">{idea.how}</dd>
+            <dd className="mt-1 text-sm text-gray-900">{idea.details.how}</dd>
           </div>
         </dl>
       </div>
