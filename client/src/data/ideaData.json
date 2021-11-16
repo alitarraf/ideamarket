@@ -5,12 +5,66 @@
     "description": "Share anonymously your dream online, and get an interpretation from experts depending on your cultural background and references",
     "industry": ["healthcare"],
     "type": ["app"],
-    "why": "This is why",
-    "who": "This is who",
-    "what": "This is what",
-    "how": "This is how",
-    "creator": [],
-    "backer": [],
+    "details": {
+      "why": "This is why",
+      "who": "This is who",
+      "what": "This is what",
+      "how": "This is how"
+    },
+    "creators": {
+      "advisors": [
+        {
+          "id": "1",
+          "name": "Leslie Abbott",
+          "role": "Advisor",
+          "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        },
+        {
+          "id": "2",
+          "name": "Hector Adams",
+          "role": "Advisor",
+          "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ],
+      "contributors": [
+        {
+          "id": "5",
+          "name": "Angela Beaver",
+          "role": "Contributor",
+          "imageUrl": "https://images.unsplash.com/photo-1501031170107-cfd33f0cbdcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        },
+        {
+          "id": "6",
+          "name": "Yvette Blanchard",
+          "role": "Contributor",
+          "imageUrl": "https://images.unsplash.com/photo-1506980595904-70325b7fdd90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ]
+    },
+    "backers": {
+      "investors": [
+        {
+          "id": "8",
+          "name": "Jeffrey Clark",
+          "role": "Investor",
+          "imageUrl": "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        },
+        {
+          "id": "9",
+          "name": "Kathryn Cooper",
+          "role": "Investor",
+          "imageUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ],
+      "customers": [
+        {
+          "id": "10",
+          "name": "Alicia Edwards",
+          "role": "Customer",
+          "imageUrl": "https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ]
+    },
     "created": "2018-01-01",
     "createdBy": "2"
   },
@@ -20,12 +74,66 @@
     "description": "Police brutality is caused partially by the aggressiveness of officers towards a perceived threat. What if #AI using camera footage can help assess the threat? Only if the AI authorise it will the gun unlock.",
     "industry": ["police"],
     "type": ["app", "hardware"],
-    "why": "This is why",
-    "who": "This is who",
-    "what": "This is what",
-    "how": "This is how",
-    "creator": [],
-    "backer": [],
+    "details": {
+      "why": "This is why",
+      "who": "This is who",
+      "what": "This is what",
+      "how": "This is how"
+    },
+    "creators": {
+      "advisors": [
+        {
+          "id": "1",
+          "name": "Leslie Abbott",
+          "role": "Advisor",
+          "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        },
+        {
+          "id": "2",
+          "name": "Hector Adams",
+          "role": "Advisor",
+          "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ],
+      "contributors": [
+        {
+          "id": "5",
+          "name": "Angela Beaver",
+          "role": "Contributor",
+          "imageUrl": "https://images.unsplash.com/photo-1501031170107-cfd33f0cbdcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        },
+        {
+          "id": "6",
+          "name": "Yvette Blanchard",
+          "role": "Contributor",
+          "imageUrl": "https://images.unsplash.com/photo-1506980595904-70325b7fdd90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ]
+    },
+    "backers": {
+      "investors": [
+        {
+          "id": "8",
+          "name": "Jeffrey Clark",
+          "role": "Investor",
+          "imageUrl": "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        },
+        {
+          "id": "9",
+          "name": "Kathryn Cooper",
+          "role": "Investor",
+          "imageUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ],
+      "customers": [
+        {
+          "id": "10",
+          "name": "Alicia Edwards",
+          "role": "Customer",
+          "imageUrl": "https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        }
+      ]
+    },
     "created": "2018-01-01",
     "createdBy": "2"
   },
@@ -35,12 +143,14 @@
     "description": "I see a lot of cases where people buy this item from this store and that item from that store because it is cheaper there. Can we tell people where and when to buy things to achieve maximum savings? Both in the offline and online world.",
     "industry": ["food"],
     "type": ["app"],
-    "why": "This is why",
-    "who": "This is who",
-    "what": "This is what",
-    "how": "This is how",
-    "creator": [],
-    "backer": [],
+    "details": {
+      "why": "This is why",
+      "who": "This is who",
+      "what": "This is what",
+      "how": "This is how"
+    },
+    "creators": {},
+    "backers": {},
     "created": "2018-01-01",
     "createdBy": "1"
   },
@@ -50,12 +160,14 @@
     "description": "Speak to your #AI #therapist. Train an #AI on conversations between #psychologist and patients. The #AI would be able to guide your self introspections.",
     "industry": ["healthcare"],
     "type": ["app"],
-    "why": "This is why",
-    "who": "This is who",
-    "what": "This is what",
-    "how": "This is how",
-    "creator": [],
-    "backer": [],
+    "details": {
+      "why": "This is why",
+      "who": "This is who",
+      "what": "This is what",
+      "how": "This is how"
+    },
+    "creators": {},
+    "backers": {},
     "created": "2018-01-01",
     "createdBy": "1"
   }

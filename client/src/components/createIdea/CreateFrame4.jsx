@@ -1,8 +1,18 @@
+import { useState } from "react";
 import { Textarea, Button } from "@/components/elements";
 
-const createFrame4 = ({ create4 }) => {
+const CreateFrame4 = ({ create4 }) => {
+  const [details, setDetails] = useState({
+    why: "",
+    who: "",
+    what: "",
+    how: "",
+  });
   const clickFinish = () => {
-    create4("done");
+    create4(details);
+  };
+  const handleChange = (e) => {
+    setDetails({ ...details, [e.target.name]: e.target.value });
   };
   return (
     <div>
@@ -21,16 +31,40 @@ const createFrame4 = ({ create4 }) => {
         <div>
           <div className="mb-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             <div>
-              <Textarea title="Why?" rows="5" />
+              <Textarea
+                title="Why?"
+                rows="5"
+                name="why"
+                value={details.why}
+                onChange={handleChange}
+              />
             </div>
             <div>
-              <Textarea title="Who?" rows="5" />
+              <Textarea
+                title="Who?"
+                rows="5"
+                name="who"
+                value={details.who}
+                onChange={handleChange}
+              />
             </div>
             <div>
-              <Textarea title="What?" rows="5" />
+              <Textarea
+                title="What?"
+                rows="5"
+                name="what"
+                value={details.what}
+                onChange={handleChange}
+              />
             </div>
             <div>
-              <Textarea title="How?" rows="5" />
+              <Textarea
+                title="How?"
+                rows="5"
+                name="how"
+                value={details.how}
+                onChange={handleChange}
+              />
             </div>
           </div>
           <Button width="full" size="xl" onClick={clickFinish}>
@@ -42,4 +76,4 @@ const createFrame4 = ({ create4 }) => {
   );
 };
 
-export default createFrame4;
+export default CreateFrame4;
