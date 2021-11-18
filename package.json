@@ -8,7 +8,8 @@
     "build": "yarn workspace @ideamarket/react-app build",
     "test": "yarn workspace @ideamarket/react-app test",
     "deploy:firebase": "yarn workspace @ideamarket/react-app deploy:firebase",
-    "chain": "cd packages/buidler && npx buidler node"
+    "chain": "yarn workspace @ideamarket/hardhat chain",
+    "deploy": "yarn workspace @scaffold-eth/hardhat deploy"
   },
   "devDependencies": {
     "@nomiclabs/buidler": "1.3.3-rc.0",
@@ -18,6 +19,14 @@
   "workspaces": {
     "packages": [
       "packages/*"
+    ],
+    "nohoist": [
+      "**/@graphprotocol/graph-ts",
+      "**/@graphprotocol/graph-ts/**",
+      "**/hardhat",
+      "**/hardhat/**",
+      "**/hardhat-ts",
+      "**/hardhat-ts/**"
     ]
   },
   "dependencies": {}
