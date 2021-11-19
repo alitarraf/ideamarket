@@ -54,10 +54,10 @@ const Hero = () => {
               <h1>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-gray-900">
-                    Kickstart ideas into reality -
+                    A decentralized collaboration network.
                   </span>
                   <span className="block text-indigo-600">
-                    no matter what business you're in
+                    Ideate - Make - Back any idea.
                   </span>
                 </span>
               </h1>
