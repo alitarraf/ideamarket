@@ -11,6 +11,9 @@
 # production
 /build
 
+# unlock
+unlock-integration.config.json
+
 # firebase
 .firebase
 .firebaserc

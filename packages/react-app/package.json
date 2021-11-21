@@ -12,7 +12,7 @@
     "@testing-library/user-event": "^12.1.10",
     "connected-react-router": "^6.9.1",
     "ethers": "^5.5.1",
-    "firebase": "^9.4.1",
+    "firebase": "8.8.1",
     "ipfs-http-client": "^54.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,7 +25,10 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "deploy:firebase": "firebase deploy"
+    "emulators": "firebase emulators:start",
+    "deploy:firebase": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions"
   },
   "eslintConfig": {
     "extends": [

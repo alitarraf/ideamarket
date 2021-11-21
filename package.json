@@ -7,7 +7,10 @@
     "start": "yarn workspace @ideamarket/react-app start",
     "build": "yarn workspace @ideamarket/react-app build",
     "test": "yarn workspace @ideamarket/react-app test",
+    "emulators": "yarn workspace @ideamarket/react-app emulators",
     "deploy:firebase": "yarn workspace @ideamarket/react-app deploy:firebase",
+    "deploy:hosting": "yarn workspace @ideamarket/react-app deploy:hosting",
+    "deploy:functions": "yarn workspace @ideamarket/react-app deploy:functions",
     "chain": "yarn workspace @ideamarket/hardhat chain",
     "deploy": "yarn workspace @scaffold-eth/hardhat deploy"
   },
