@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
@@ -16,23 +15,23 @@ import { Button } from "@/components/elements";
 //   protocol: "https",
 // });
 
-import { create } from "ipfs-http-client";
-const ipfs = create({
-  host: "ipfs.infura.io",
-  port: "5001",
-  protocol: "https",
-});
+// import { create } from "ipfs-http-client";
+// const ipfs = create({
+//   host: "ipfs.infura.io",
+//   port: "5001",
+//   protocol: "https",
+// });
 
-const addToIPFS = async (fileToUpload) => {
-  console.log("fileToUpload");
-  console.log(fileToUpload);
-  // for await (const result of ipfs.add(fileToUpload)) {
-  //   return result;
-  // }
-  const result = await ipfs.add(fileToUpload);
-  return result;
-  // return "success";
-};
+// const addToIPFS = async (fileToUpload) => {
+//   console.log("fileToUpload");
+//   console.log(fileToUpload);
+//   // for await (const result of ipfs.add(fileToUpload)) {
+//   //   return result;
+//   // }
+//   const result = await ipfs.add(fileToUpload);
+//   return result;
+//   // return "success";
+// };
 
 const CreateIdeaPage = () => {
   const [step, setStep] = useState(1);
@@ -71,8 +70,8 @@ const CreateIdeaPage = () => {
 
   const createIdea = async (data) => {
     console.log(data);
-    const result = await addToIPFS(data);
-    console.log(result);
+    // const result = await addToIPFS(data);
+    // console.log(result);
     // if (result && result.path) {
     //   console.log(result);
     //   setIpfsHash(result.path);
@@ -103,4 +102,3 @@ const CreateIdeaPage = () => {
 };
 
 export default CreateIdeaPage;
-
