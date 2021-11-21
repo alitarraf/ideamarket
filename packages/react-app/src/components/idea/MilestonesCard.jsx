@@ -6,9 +6,16 @@ const MilestonesCard = () => {
           <div className="flex items-center border-b-2 mb-2 py-2">
             <div className="pl-3">
               <div className="font-medium text-xl text-gray-700">
-                Current Stage
+                How things are going?
               </div>
             </div>
+            <div class="inline-block ml-3">
+            <a href="#">
+            <button class="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-blue-600 rounded shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none">
+              Submit Bounty
+            </button>
+            </a>
+          </div>
           </div>
           <div class="flex w-full p-2 isolate">
             {/* <div class="w-full">
@@ -66,7 +73,7 @@ const MilestonesCard = () => {
 
     <div class="w-1/4">
       <div class="relative mb-2">
-        <div class="absolute flex align-center items-center align-middle content-center w-36 -translate-x-1/2 translate-y-4">
+        <div class="absolute flex align-center items-center align-middle content-center w-10/12 transform -translate-x-1/2 translate-y-4">
           <div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
             <div class="w-full bg-blue-300 py-1 rounded"></div>
           </div>
@@ -88,7 +95,7 @@ const MilestonesCard = () => {
 
     <div class="w-1/4">
       <div class="relative mb-2">
-        <div class="absolute flex align-center items-center align-middle content-center w-36 -translate-x-1/2 translate-y-4">
+        <div class="absolute flex align-center items-center align-middle content-center w-10/12 transform -translate-x-1/2 translate-y-4">
           <div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
             <div class="w-1/3 bg-blue-300 py-1 rounded"></div>
           </div>
@@ -108,7 +115,7 @@ const MilestonesCard = () => {
 
     <div class="w-1/4">
       <div class="relative mb-2">
-        <div class="absolute flex align-center items-center align-middle content-center w-36 -translate-x-1/2 translate-y-4">
+        <div class="absolute flex align-center items-center align-middle content-center w-10/12 transform -translate-x-1/2 translate-y-4">
           <div class="w-full bg-gray-200 rounded items-center align-middle align-center flex-1">
             <div class="w-0 bg-blue-300 py-1 rounded"></div>
           </div>
