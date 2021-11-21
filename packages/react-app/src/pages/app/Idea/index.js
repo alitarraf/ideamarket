@@ -3,6 +3,7 @@ import {
   PeopleCard,
   IdeaDescriptionCard,
   MilestonesCard,
+  TreasuryCard,
 } from "@/components/idea";
 
 import ideaData from "@/data/ideaData";
@@ -15,6 +16,7 @@ const IdeaPage = () => {
     <div className="my-4 mx-4 md:mx-12">
       <IdeaDescriptionCard idea={idea} />
       <MilestonesCard />
+      <TreasuryCard/>
       <div className="my-8 md:grid md:grid-cols-2 md:gap-8">
         <PeopleCard title="Advisors & Contributors" people={idea.creators} />
         <PeopleCard title="Investors & Customers" people={idea.backers} />
