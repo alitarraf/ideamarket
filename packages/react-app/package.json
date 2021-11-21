@@ -1,3 +1,4 @@
+
 {
   "name": "@ideamarket/react-app",
   "version": "0.1.0",
@@ -54,3 +55,4 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
+

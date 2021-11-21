@@ -1,3 +1,4 @@
+
 import { firebase } from "@firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
@@ -28,3 +29,4 @@ if (window.location.hostname === "localhost") {
   // // functions emulator working
   funct.useEmulator("localhost", 5001);
 }
+
