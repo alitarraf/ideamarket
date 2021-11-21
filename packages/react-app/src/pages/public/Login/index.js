@@ -1,7 +1,12 @@
+
 import { Link } from "react-router-dom";
 import { LoginInstructions } from "@/components/login";
 import { LogoName } from "@/components/logo";
 // import { ethers } from "ethers";
+import firebaseApp from "@/services/firebase";
+import "firebase/auth";
+import "firebase/functions";
+import { signInWithWeb3 } from "@novuminsights/unlock-protocol-firebase/lib/browser";
 
 const LoginPage = () => {
   const handleLogin = async () => {
@@ -22,6 +27,10 @@ const LoginPage = () => {
       console.log("no wallet detected");
     }
   };
+  const handleTestUnlock = () => {
+    console.log("test unlock");
+    signInWithWeb3(firebaseApp);
+  };
   return (
     <div>
       <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
@@ -36,8 +45,17 @@ const LoginPage = () => {
         </div>
       </div>
       <div>
-        <button className="border-2 py-1 px-2 rounded" onClick={handleLogin}>
-          test metamash login!!
+        <button
+          className="border-2 py-1 px-2 rounded uppercase"
+          onClick={handleLogin}
+        >
+          test metamask login
+        </button>
+        <button
+          className="border-2 py-1 px-2 rounded uppercase bg-blue-400 text-white"
+          onClick={handleTestUnlock}
+        >
+          test unlock login
         </button>
       </div>
       <LoginInstructions />
@@ -46,3 +64,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
