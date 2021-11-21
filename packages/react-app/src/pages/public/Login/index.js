@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { LoginInstructions } from "@/components/login";
 import { LogoName } from "@/components/logo";
@@ -63,3 +64,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
