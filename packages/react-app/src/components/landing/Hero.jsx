@@ -193,7 +193,7 @@ const Hero = () => {
               <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                 Unleash your ideas into the world
               </h3>
-              <p className="text-gray-600 mb-8">
+              <div className="text-gray-600 mb-8">
                 <div className="flex">
                   <div className="flex-initial ...">
                     <FontAwesomeIcon icon={faLightbulb} size="2x" />
@@ -236,7 +236,7 @@ const Hero = () => {
                     <br />
                   </div>
                 </div>
-              </p>
+              </div>
 
               <br />
               <br />
@@ -447,8 +447,8 @@ const Hero = () => {
                   y2="255.28"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <ellipse
                   transform="translate(-296.3 483.9) rotate(-69.082)"
@@ -527,8 +527,8 @@ const Hero = () => {
                   points="49.464 361.02 491.96 361.02 560.56 394.45 669.87 447.7 741.33 313.89 943.57 313.89"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <circle cx="222.81" cy="375.03" r="13.685" fill="#6c63ff" />
                 <circle cx="350.54" cy="361.03" r="13.685" fill="#6c63ff" />
@@ -541,8 +541,8 @@ const Hero = () => {
                   r="14.756"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <ellipse
                   cx="170"
@@ -650,8 +650,8 @@ const Hero = () => {
                   height="64.161"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <rect x="226.6" y="199" width="36" height="36" fill="#ff6584" />
                 <rect
@@ -661,8 +661,8 @@ const Hero = () => {
                   height="36"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <circle cx="906.05" cy="189.47" r="79" fill="#2f2e41" />
                 <rect
@@ -732,8 +732,8 @@ const Hero = () => {
                   y2="169"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <circle cx="669.6" cy="68" r="68" fill="#ff6584" />
                 <ellipse
@@ -756,8 +756,8 @@ const Hero = () => {
                   y2="713.31"
                   fill="#3f3d56"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <circle cx="759.74" cy="713.31" r="10.523" fill="#3f3d56" />
                 <path
@@ -772,7 +772,7 @@ const Hero = () => {
                 <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                   Make and collaborate with others
                 </h3>
-                <p className="text-gray-600 mb-8">
+                <div className="text-gray-600 mb-8">
                   <div className="flex">
                     <div className="flex-initial ...">
                       <FontAwesomeIcon icon={faKey} size="2x" />
@@ -815,7 +815,7 @@ const Hero = () => {
                       <br />
                     </div>
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -825,7 +825,7 @@ const Hero = () => {
               <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
                 Crowdfund your dream idea
               </h3>
-              <p className="text-gray-600 mb-8">
+              <div className="text-gray-600 mb-8">
                 <div className="flex">
                   <div className="flex-initial ...">
                     <FontAwesomeIcon icon={faPlay} size="2x" />
@@ -866,7 +866,7 @@ const Hero = () => {
                     <br />
                   </div>
                 </div>
-              </p>
+              </div>
             </div>
 
             <div className="relative mx-auto w-full rounded-lg shadow-sm lg:max-w-md">
@@ -951,8 +951,8 @@ const Hero = () => {
                   fill="none"
                   opacity=".2"
                   stroke="#000"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <path
                   transform="translate(-50.5 -51.16)"
@@ -975,8 +975,8 @@ const Hero = () => {
                   fill="none"
                   opacity=".2"
                   stroke="#000"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <path
                   transform="translate(-50.5 -51.16)"
@@ -1003,8 +1003,8 @@ const Hero = () => {
                   d="m898.94 616.01s-37.852-177.4-274.77-306.09"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <polygon
                   points="583.43 254.89 583.9 256.84 574.32 259.16 577.34 268.55 575.44 269.16 571.76 257.72"
@@ -1118,16 +1118,16 @@ const Hero = () => {
                   d="m597.5 264.16q-57.5-21.717-115 0v-47a199.04 199.04 0 0 1 115 0z"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <path
                   transform="translate(-50.5 -51.16)"
                   d="m581.5 254.44q-41.5-15.674-83 0v-33.922a143.65 143.65 0 0 1 83 0z"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <ellipse
                   cx="488"
@@ -1136,8 +1136,8 @@ const Hero = () => {
                   ry="9"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <ellipse
                   transform="translate(-97.662 63.338) rotate(-11.535)"
@@ -1152,16 +1152,16 @@ const Hero = () => {
                   d="m612.89 307.1q-60.681-9.7794-112.68 22.997l-9.3988-46.051a199.04 199.04 0 0 1 112.68-22.997z"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <path
                   transform="translate(-50.5 -51.16)"
                   d="m595.27 300.78q-43.796-7.0582-81.323 16.598l-6.7835-33.237a143.65 143.65 0 0 1 81.323-16.598z"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <ellipse
                   transform="translate(-96.535 64.25) rotate(-11.535)"
@@ -1171,8 +1171,8 @@ const Hero = () => {
                   ry="9"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <ellipse
                   transform="translate(105.9 809.79) rotate(-86.019)"
@@ -1187,16 +1187,16 @@ const Hero = () => {
                   d="m602.44 381.08q-55.854-25.656-114.72-7.9832l3.2627-46.887a199.04 199.04 0 0 1 114.72 7.9832z"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <path
                   transform="translate(-50.5 -51.16)"
                   d="m587.15 370.28q-40.312-18.517-82.8-5.7618l2.3548-33.84a143.65 143.65 0 0 1 82.8 5.7618z"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <ellipse
                   transform="translate(115.3 812.72) rotate(-86.019)"
@@ -1206,16 +1206,16 @@ const Hero = () => {
                   ry="17"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <path
                   transform="translate(-50.5 -51.16)"
                   d="m465.42 265.25s-73.496-10.055-125.98 20.704"
                   fill="none"
                   stroke="#3f3d56"
-                  stroke-miterlimit="10"
-                  stroke-width="2"
+                  strokeMiterlimit="10"
+                  strokeWidth="2"
                 />
                 <polygon
                   points="290.71 224.46 292.62 225.06 289.63 234.46 299.23 236.75 298.76 238.7 287.08 235.91"
