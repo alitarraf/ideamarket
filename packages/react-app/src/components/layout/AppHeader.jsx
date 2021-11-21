@@ -1,42 +1,33 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { LogoName } from "@/components/logo";
+import { selectCurrentUser, setSignOut } from "@/store/user/userSlice";
+import { useSelector, useDispatch } from "react-redux";
+import { signInWithWeb3 } from "@novuminsights/unlock-protocol-firebase/lib/browser";
+import firebaseApp from "@/services/firebase";
+const auth = firebaseApp.auth();
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const AppHeader = () => {
-  const [address, setAddress] = useState(null);
-  // useEffect(() => {
-  //   const checkLogin = async () => {
-  //     const { ethereum } = window;
-  //     if (ethereum) {
-  //       const accounts = await ethereum.request({
-  //         method: "eth_requestAccounts",
-  //       });
-  //       setAddress(accounts[0]);
-  //     } else {
-  //       setAddress(null);
-  //     }
-  //   };
-  //   checkLogin();
-  // }, []);
+  const currentUser = useSelector(selectCurrentUser);
+  const dispatch = useDispatch();
+
   let navigate = useNavigate();
   const loginUser = async () => {
-    navigate("/login");
-    // const { ethereum } = window;
-    // if (ethereum) {
-    //   const accounts = await ethereum.request({
-    //     method: "eth_requestAccounts",
-    //   });
-    //   setAddress(accounts[0]);
-    // } else {
-    //   console.log("no wallet detected");
-    // }
+    signInWithWeb3(firebaseApp);
   };
+
+  const logoutUser = async () => {
+    navigate("/");
+    auth.signOut();
+    dispatch(setSignOut());
+  };
+
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
@@ -50,10 +41,10 @@ const AppHeader = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end"></div>
+              {/* <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end"></div> */}
 
-              {!address ? (
-                <div>
+              {currentUser.uid ? (
+                <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
                   <div className="flex items-center lg:hidden">
                     <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                       <span className="sr-only">Open main menu</span>
@@ -112,15 +103,15 @@ const AppHeader = () => {
                           </Menu.Item>
                           <Menu.Item>
                             {({ active }) => (
-                              <Link
-                                to="/"
+                              <div
+                                onClick={() => logoutUser()}
                                 className={classNames(
                                   active ? "bg-gray-100" : "",
-                                  "block px-4 py-2 text-sm text-gray-700"
+                                  "block px-4 py-2 text-sm text-gray-700 cursor-pointer"
                                 )}
                               >
                                 Sign out
-                              </Link>
+                              </div>
                             )}
                           </Menu.Item>
                         </Menu.Items>
@@ -129,12 +120,12 @@ const AppHeader = () => {
                   </div>
                 </div>
               ) : (
-                <div className="">
+                <div className="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
                   <button
                     onClick={() => {
                       loginUser();
                     }}
-                    className=" justify-center items-center px-2 rounded-md focus:outline-none font-medium border-2 h-16 w-24"
+                    className=" justify-center items-center px-2 rounded-md focus:outline-none font-medium border-2 h-10 w-20 hover:bg-gray-600 hover:text-white"
                   >
                     Login
                   </button>

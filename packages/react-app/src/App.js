@@ -1,4 +1,9 @@
+import { useEffect } from "react";
 import { Route, Routes, Outlet } from "react-router-dom";
+import firebase from "./services/firebase";
+
+import { setUserLogin } from "./store/user/userSlice";
+import { useDispatch } from "react-redux";
 
 import LandingPage from "@/pages/public/Landing";
 import LoginPage from "@/pages/public/Login";
@@ -12,6 +17,27 @@ import ProfilePage from "@/pages/app/Profile";
 import { AppHeader, PublicHeader, PublicFooter } from "@/components/layout";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        firebase
+          .auth()
+          .currentUser.getIdTokenResult()
+          .then(function ({ claims }) {
+            // console.log(claims);
+            dispatch(
+              setUserLogin({
+                uid: claims.user_id,
+              })
+            );
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+    });
+  }, [dispatch]);
   return (
     <div>
       <Routes>
