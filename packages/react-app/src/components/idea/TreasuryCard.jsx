@@ -23,45 +23,22 @@ const TreasuryCard = () => {
               </div>
 
               <div className="mx-2">
-                <div className="text-center border border-blue-300  px-3 rounded-xl text-xs uppercase text-blue-700 font-semibold transition bg-blue-100 shadow ripple hover:shadow-lg hover:bg-blue-300">
+                <div className="text-center border border-red-300  px-3 rounded-xl text-xs uppercase text-red-700 font-semibold transition bg-red-100 shadow ripple hover:shadow-lg hover:bg-red-300">
                   Expenses
                 </div>
               </div>
               <div className="mx-2">
-                <div className="text-center border border-indigo-300  px-3 rounded-xl text-xs uppercase text-indigo-700 font-semibold transition bg-indigo-100 shadow ripple hover:shadow-lg hover:bg-indigo-300">
-                  Transactions
+                <div className="text-center border border-green-300  px-3 rounded-xl text-xs uppercase text-green-700 font-semibold transition bg-green-100 shadow ripple hover:shadow-lg hover:bg-green-300">
+                  Funding
                 </div>
               </div>
             </div>
 
-            <div className="w-full lg:w-8/12">
-              <div className="mt-6">
-                <div className="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+            <div className="w-full lg:w-11/12">
+              <div className="mt-2 ml-4">
+                <div className="max-w-4xl px-10 py-3 mx-auto bg-white rounded-lg shadow-md">
                   <div className="flex items-center justify-between">
-                    <span className="font-light text-gray-600">
-                      Jun 1, 2020
-                    </span>
-                    <div className="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">
-                      Laravel
-                    </div>
-                  </div>
-                  <div className="mt-2">
-                    <div className="text-2xl font-bold text-gray-700 hover:underline">
-                      Build Your New Idea with Laravel Freamwork.
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Tempora expedita dicta totam aspernatur doloremque.
-                      Excepturi iste iusto eos enim reprehenderit nisi,
-                      accusamus delectus nihil quis facere in modi ratione
-                      libero!
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between mt-4">
-                    <div className="text-blue-500 hover:underline">
-                      Read more
-                    </div>
-                    <div>
+                  <div>
                       <div className="flex items-center">
                         <img
                           src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
@@ -73,51 +50,78 @@ const TreasuryCard = () => {
                         </h1>
                       </div>
                     </div>
+                    <div className="px-2 py-1 font-bold text-green-100 bg-green-600 rounded hover:bg-green-500">
+                      Funding
+                    </div>
                   </div>
-                </div>
-              </div>
+                  <div className="mt-2 flex items-center justify-between">
+                    <div className="text-xl font-bold text-gray-700 hover:underline">
+                      Financial contribution to Idea NFT.
+                    </div>
+                    <div className="font-bold text-gray-600">
+                        +1032 <span className="font-normal">MATIC</span>
+                    </div>
+                  </div>
+                  
 
-              <div className="mt-6">
-                <div className="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
                   <div className="flex items-center justify-between">
-                    <span className="font-light text-gray-600">
-                      Jun 1, 2020
-                    </span>
-                    <div className="px-2 py-1 font-bold text-gray-100 bg-gray-600 rounded hover:bg-gray-500">
-                      Laravel
-                    </div>
-                  </div>
-                  <div className="mt-2">
-                    <div className="text-2xl font-bold text-gray-700 hover:underline">
-                      Build Your New Idea with Laravel Freamwork.
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Tempora expedita dicta totam aspernatur doloremque.
-                      Excepturi iste iusto eos enim reprehenderit nisi,
-                      accusamus delectus nihil quis facere in modi ratione
-                      libero!
+                    
+                    <p className=" text-gray-600">
+                        Credit from Alex to Idea.NFT - <span className="font-light">November 21, 2021.</span>
                     </p>
-                  </div>
-                  <div className="flex items-center justify-between mt-4">
                     <div className="text-blue-500 hover:underline">
-                      Read more
+                      More details
                     </div>
-                    <div>
+                    
+                  </div>
+                </div>
+
+                
+              </div>
+              <div className="mt-2 ml-4 mb-4">
+                <div className="max-w-4xl px-10 py-3 mx-auto bg-white rounded-lg shadow-md">
+                  <div className="flex items-center justify-between">
+                  <div>
                       <div className="flex items-center">
                         <img
-                          src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
+                          src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2080&amp;q=80"
                           alt="avatar"
                           className="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"
                         />
                         <h1 className="font-bold text-gray-700 hover:underline">
-                          Alex John
+                          Eric Ronald
                         </h1>
                       </div>
                     </div>
+                    <div className="px-2 py-1 font-bold text-red-100 bg-red-600 rounded hover:bg-red-500">
+                      Expenses
+                    </div>
+                  </div>
+                  <div className="mt-2 flex items-center justify-between">
+                    <div className="text-xl font-bold text-gray-700 hover:underline">
+                      Expenses for Idea NFT.
+                    </div>
+                    <div className="font-bold text-gray-600">
+                        -410 <span className="font-normal">MATIC</span>
+                    </div>
+                  </div>
+                  
+
+                  <div className="flex items-center justify-between">
+                    
+                    <p className=" text-gray-600">
+                        Debit to Eric for Idea.NFT - <span className="font-light">November 17, 2021.</span>
+                    </p>
+                    <div className="text-blue-500 hover:underline">
+                      More details
+                    </div>
+                    
                   </div>
                 </div>
+
+                
               </div>
+              
             </div>
           </div>
           <div className="border-grey-light border border-solid text-sm rounded-lg">

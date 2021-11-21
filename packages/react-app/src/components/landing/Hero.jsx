@@ -70,7 +70,7 @@ const Hero = () => {
                     A decentralized collaboration network to
                   </span>
                   <span className="block text-indigo-600">
-                    Ideate - Make - Fund any idea.
+                    Ideate - Build - Fund any idea.
                   </span>
                 </span>
               </h1>
@@ -91,11 +91,11 @@ const Hero = () => {
                     type="submit"
                     className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Join TIDAI
+                    Join IdeaMarket
                   </button>
                 </form>
                 <p className="mt-3 text-sm text-gray-500">
-                  By joining TIDAI you agree to receive the top ideas from the
+                  By joining IdeaMarket you agree to receive the top ideas from the
                   community in your inbox.
                 </p>
               </div>
@@ -1515,8 +1515,8 @@ const Hero = () => {
             </svg>
           </div>
 
-          <div className="inline-block align-middle">
-            <button className="inline-block px-6 py-2 text-xs font-medium leading-6 text-center text-white uppercase transition bg-indigo-600 rounded shadow ripple hover:shadow-lg hover:bg-indigo-800 focus:outline-none">
+          <div className="flex justify-center">
+            <button className="mt-5 px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 shadow-lg hover:bg-indigo-900">
               Get Started!
             </button>
           </div>

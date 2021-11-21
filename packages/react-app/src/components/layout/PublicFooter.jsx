@@ -1,9 +1,9 @@
 const PublicFooter = () => {
   return (
     <div>
-      <div>public footer</div>
+      <div className="h-3 border-t border-gray-200 p-4 text-sm font-semibold">IdeaMarket</div>
 
-      <div className="m-6 space-x-3">
+      <div className="p-4 space-x-3">
         {/* Github */}
         <button className="inline-block px-4 py-2 text-center text-white transition bg-black rounded shadow ripple waves-light hover:shadow-lg hover:bg-black focus:outline-none">
           <svg
