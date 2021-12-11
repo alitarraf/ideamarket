@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { Route, Routes, Outlet } from "react-router-dom";
-import firebase from "./services/firebase";
+// import firebase from "./services/firebase";
+import firebaseApp from "./services/firebase";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 import { setUserLogin } from "./store/user/userSlice";
 import { useDispatch } from "react-redux";
@@ -16,14 +18,15 @@ import ProfilePage from "@/pages/app/Profile";
 
 import { AppHeader, PublicHeader, PublicFooter } from "@/components/layout";
 
+const auth = getAuth(firebaseApp);
+
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    firebase.auth().onAuthStateChanged((user) => {
+    onAuthStateChanged(auth, (user) => {
       if (user) {
-        firebase
-          .auth()
-          .currentUser.getIdTokenResult()
+        auth.currentUser
+          .getIdTokenResult()
           .then(function ({ claims }) {
             // console.log(claims);
             dispatch(

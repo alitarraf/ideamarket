@@ -9,7 +9,6 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
-    "@novuminsights/unlock-protocol-firebase": "^0.1.0",
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -17,7 +16,7 @@
     "@unlock-protocol/contracts": "^0.0.1",
     "connected-react-router": "^6.9.1",
     "ethers": "^5.5.1",
-    "firebase": "8.8.1",
+    "firebase": "^9.6.0",
     "ipfs-http-client": "^54.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -57,6 +56,7 @@
   "devDependencies": {
     "autoprefixer": "^9",
     "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "typescript": "^4.5.2"
   }
 }

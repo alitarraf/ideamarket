@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import firebaseApp from "@/services/firebase";
-import { signInWithWeb3 } from "@novuminsights/unlock-protocol-firebase/lib/browser";
+import { signInWithWeb3 } from "@/utils/login/index.ts";
 
 const LoginInstructions = () => {
   const login = () => {
-    // console.log("Login");
     signInWithWeb3(firebaseApp);
   };
   return (

@@ -1,0 +1,12 @@
+{
+  "networks": {
+    "rinkeby": {
+      "provider_url": "",
+      "locks": {
+        "": ["basic_subscription"]
+      }
+    }
+  },
+  "default_network": "rinkeby",
+  "default_claims": ["wallet_owner"]
+}

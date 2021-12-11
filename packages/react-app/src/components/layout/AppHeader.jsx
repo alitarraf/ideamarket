@@ -5,9 +5,11 @@ import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { LogoName } from "@/components/logo";
 import { selectCurrentUser, setSignOut } from "@/store/user/userSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { signInWithWeb3 } from "@novuminsights/unlock-protocol-firebase/lib/browser";
 import firebaseApp from "@/services/firebase";
-const auth = firebaseApp.auth();
+import { getAuth, signOut } from "firebase/auth";
+import { signInWithWeb3 } from "@/utils/login/index.ts";
+
+const auth = getAuth();
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -24,7 +26,7 @@ const AppHeader = () => {
 
   const logoutUser = async () => {
     navigate("/");
-    auth.signOut();
+    signOut(auth);
     dispatch(setSignOut());
   };
 
