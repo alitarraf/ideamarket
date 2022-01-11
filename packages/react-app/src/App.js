@@ -1,20 +1,14 @@
 import { useEffect } from "react";
 import { Route, Routes, Outlet } from "react-router-dom";
-// import firebase from "./services/firebase";
 import firebaseApp from "./services/firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 import { setUserLogin } from "./store/user/userSlice";
 import { useDispatch } from "react-redux";
 
-import LandingPage from "@/pages/public/Landing";
-import LoginPage from "@/pages/public/Login";
-import PrivacyPage from "@/pages/public/Privacy";
+import { LandingPage, LoginPage, PrivacyPage } from "@/pages/public";
 
-import SearchPage from "@/pages/app/Search";
-import CreateIdeaPage from "@/pages/app/CreateIdea";
-import IdeaPage from "@/pages/app/Idea";
-import ProfilePage from "@/pages/app/Profile";
+import { SearchPage, CreateIdeaPage, IdeaPage, ProfilePage } from "@/pages/app";
 
 import { AppHeader, PublicHeader, PublicFooter } from "@/components/layout";
 

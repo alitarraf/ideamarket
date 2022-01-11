@@ -1,13 +1,16 @@
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { LogoName } from "@/components/logo";
+import { Address } from "@/components/elements";
 import { selectCurrentUser, setSignOut } from "@/store/user/userSlice";
 import { useSelector, useDispatch } from "react-redux";
 import firebaseApp from "@/services/firebase";
 import { getAuth, signOut } from "firebase/auth";
 import { signInWithWeb3 } from "@/utils/login/index.ts";
+import { ethers } from "ethers";
+import Davatar from "@davatar/react";
 
 const auth = getAuth();
 
@@ -16,12 +19,17 @@ function classNames(...classes) {
 }
 
 const AppHeader = () => {
+  const [provider, setProvider] = useState(null);
   const currentUser = useSelector(selectCurrentUser);
   const dispatch = useDispatch();
 
   let navigate = useNavigate();
   const loginUser = async () => {
-    signInWithWeb3(firebaseApp);
+    if (provider) {
+      signInWithWeb3(firebaseApp);
+    } else {
+      alert("Please install MetaMask to be able to Login");
+    }
   };
 
   const logoutUser = async () => {
@@ -29,6 +37,13 @@ const AppHeader = () => {
     signOut(auth);
     dispatch(setSignOut());
   };
+
+  useEffect(() => {
+    const { ethereum } = window;
+    if (ethereum) {
+      setProvider(new ethers.providers.Web3Provider(ethereum));
+    }
+  }, []);
 
   return (
     <Disclosure as="nav" className="bg-white shadow">
@@ -73,11 +88,13 @@ const AppHeader = () => {
                       <div>
                         <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none">
                           <span className="sr-only">Open user menu</span>
-                          <img
-                            className="h-8 w-8 rounded-full"
-                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                            alt=""
-                          />
+                          {provider && (
+                            <Davatar
+                              size={36}
+                              provider={provider}
+                              address={currentUser.uid}
+                            />
+                          )}
                         </Menu.Button>
                       </div>
                       <Transition
@@ -140,19 +157,19 @@ const AppHeader = () => {
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-4">
                 <div className="flex-shrink-0">
-                  <img
-                    className="h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
+                  {provider && (
+                    <Davatar
+                      size={36}
+                      provider={provider}
+                      address={currentUser.uid}
+                    />
+                  )}
                 </div>
                 <div className="ml-3">
                   <div className="text-base font-medium text-gray-800">
-                    Tom Cook
+                    <Address address={currentUser.uid} shortened />
                   </div>
-                  <div className="text-sm font-medium text-gray-500">
-                    tom@example.com
-                  </div>
+                  <div className="text-sm font-medium text-gray-500"></div>
                 </div>
                 <button
                   type="button"
