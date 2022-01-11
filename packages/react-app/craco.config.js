@@ -11,9 +11,4 @@ module.exports = {
       testMatch: ["<rootDir>/spec/**/*.{spec,test}.{js,jsx,ts,tsx}"],
     },
   },
-  style: {
-    postcss: {
-      plugins: [require("tailwindcss"), require("autoprefixer")],
-    },
-  },
 };
