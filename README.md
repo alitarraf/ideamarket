@@ -7,6 +7,10 @@ https://tidai-app.web.app/
 
 ## development
 
+Be sure to have firebase globally installed first
+
+`npm install -g firebase-tools`
+
 1.  Run `yarn`
 2.  In one terminal to start react app on localhost:3000
 3.  Run `yarn start`
