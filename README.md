@@ -7,15 +7,27 @@ https://tidai-app.web.app/
 
 ## development
 
+### Environment keys
+
+In the `packages/react-app` folder, copy `.env.example` file as `.env`
+
+Add firebase keys.
+
+### Install
+
 Be sure to have firebase globally installed first
 
 `npm install -g firebase-tools`
 
-1.  Run `yarn`
-2.  In one terminal to start react app on localhost:3000
-3.  Run `yarn start`
-4.  In another terminal to start firebase emulators on localhost:4000
-5.  Run `yarn emulators`
+1.  Run `yarn` to install all packages
+2.  `cd packages/react-app/functions`
+3.  Run `npm install` to install packages for firebase functions
+4.  `cd ../../../`
+5.  Run `yarn emulators` to start firebase emulators on localhost:4000
+6.  Open a 2nd terminal
+7.  Run `yarn start` to start react app development on localhost:3000
+
+## Below is README info from the template this project was use on, kept for information.
 
 # 🏄‍♂️ Quick Start
 

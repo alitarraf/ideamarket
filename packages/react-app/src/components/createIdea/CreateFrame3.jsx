@@ -74,8 +74,9 @@ const createFrame3 = ({ create3 }) => {
         <ul className="mt-6 border-t border-b border-gray-200 divide-y divide-gray-200">
           {items.map((item, itemIdx) => (
             <li key={itemIdx}>
-              <div
-                className="relative group py-4 px-2 flex items-start space-x-3 hover:bg-blue-100 cursor-pointer"
+              <button
+                type="button"
+                className="w-full relative group py-4 px-2 flex items-start space-x-3 hover:bg-blue-100"
                 onClick={() => {
                   industrySelect(item.value);
                 }}
@@ -106,7 +107,7 @@ const createFrame3 = ({ create3 }) => {
                     aria-hidden="true"
                   />
                 </div>
-              </div>
+              </button>
             </li>
           ))}
         </ul>
